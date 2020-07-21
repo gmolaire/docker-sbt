@@ -29,11 +29,11 @@ Login to Docker Hub
     
 Pull the image. By the default, the image is uses openjdk 11 (tagged with 11.0.8-jdk).
 
-    docker pull gumol/docker-sbt
+    docker pull gmolaire/docker-sbt
 
 To run a command against your project assuming your running the container in its directory:
 
-    docker run -it --rm -w "/usr/app" -v "$PWD":/usr/app gumol/docker-sbt sbt <SBT_COMMAND>
+    docker run -it --rm -w "/usr/app" -v "$PWD":/usr/app gmolaire/docker-sbt sbt <SBT_COMMAND>
 
 ## Building
 
